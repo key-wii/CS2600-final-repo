@@ -82,7 +82,6 @@ void loop() {
      writeData(0xff);  // Clear the display content
      isAlerting = false;
      ledc_set_duty_and_update(LEDC_HS_MODE, LEDC_CHANNEL_0, 0, 0);
-     delay(hours8);
 }
 
 void alert() {
