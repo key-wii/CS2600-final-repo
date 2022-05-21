@@ -54,6 +54,7 @@ void setup() {
   pinMode(dataPin, OUTPUT);
 }
 void loop() {
+     delay(60000);
      //delay(hours8);
      writeData(num[0]);// Send display data to 74HC595
      isAlerting = true;
@@ -81,7 +82,7 @@ void loop() {
      writeData(0xff);  // Clear the display content
      isAlerting = false;
      ledc_set_duty_and_update(LEDC_HS_MODE, LEDC_CHANNEL_0, 0, 0);
-     delay(600000);
+     delay(hours8);
 }
 
 void alert() {
