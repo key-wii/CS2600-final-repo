@@ -70,7 +70,7 @@ void setup() {
     }
   }
   // publish and subscribe
-  client.publish(topic, "Hi EMQX I'm ESP32 ^^");
+  client.publish(topic, "THIS IS A TEST 2222 SEE IF THIS WORKS");
   client.subscribe(topic);
 
 
